@@ -1,2 +1,4 @@
-# python_tutorial
-Temporary python tutorial repo
+# Python exercises with solutions
+
+## w3resource
+https://www.w3resource.com/python-exercises/python-basic-exercises.php
