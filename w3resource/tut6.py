@@ -1,7 +1,5 @@
-wpisane = input("wpisz csv: ")
+a = input("csv: ").split(",")
+b = tuple(a)
 
-outlista = wpisane.split(",")
-outtupla = tuple(outlista)
-
-print(outlista)
-print(outtupla)
+print(a)
+print(b)
