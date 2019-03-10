@@ -1,3 +1,4 @@
-
-for x in range(61, 151):
-    open("tut"+str(x)+".py", 'a').close()
+import cProfile
+def sum():
+    print(5*4)
+cProfile.run('sum()')
