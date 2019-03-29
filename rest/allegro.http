@@ -1,0 +1,8 @@
+### test
+GET  https://api.allegro.pl
+
+### test
+POST  https://api.allegro.pl
+
+###
+GET https://api.allegro.pl/sale/categories/11763
