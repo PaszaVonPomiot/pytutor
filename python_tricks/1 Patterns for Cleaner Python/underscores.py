@@ -33,5 +33,23 @@ print(dir(t))  # '_Test__abc'
 
 """
 Double Leading and Trailing Underscore: __var__
-Single Underscore: _
+Dunder methods or magic methods - have special use in language like __init__ or __call__
+Not affected by name mangling.
 """
+
+"""
+Single Underscore: _
+“don’t care” variable that is never used. Eg. in "for _ in iterable" loop
+
+ALSO ONLY IN INTERPRETER REPL SESSION
+>>> _=5
+>>> print(_)
+5
+>>> 3+7
+10
+>>> print(_)
+5
+"""
+# unpacking tuple but interested only in mileage
+car = ("red", "auto", 12, 3812.4)
+_, _, _, mileage = car
