@@ -55,6 +55,7 @@ def greet():
 
 greet()
 
+
 """
 Decorator stacking - applied from bottom to the top
 """
@@ -89,3 +90,27 @@ def licz(word1, word2):
 
 
 licz("raz", "dwa")
+
+"""
+Decorators replace one function with another thus remove some metadata like original docstring
+To solve this always copy metadata from original function using functools.wraps
+This helps debugging
+"""
+import functools
+
+
+def proxy(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):  # COLLECTS positional and keyword arguments from func
+        result = func(*args, **kwargs)
+        result.append("trzy")
+        return result  # UNPACKING - forwards arguments to original function
+
+    return wrapper
+
+
+"""
+Topics not covered:
+- Decorator that accepts argments
+- Decorator as a class
+"""
