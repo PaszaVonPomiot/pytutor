@@ -34,6 +34,7 @@ def greet(func):
 greet(bark)
 
 # map(function, iterable) is higher-order function
+# use comprehensions instead of map if possible
 list(map(bark, ["hello", "hey", "hi"]))
 
 """
