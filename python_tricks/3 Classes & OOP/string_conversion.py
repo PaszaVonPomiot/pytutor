@@ -40,11 +40,23 @@ car = Car("red")
 # repr conversion
 car
 repr(car)
-print([car])
+f"{car!r}"
+[car]
+(car,)
+{car: 1}
 
 # str conversion
 str(car)
 print(car)
+f"{car!s}"
+
+
+"""
+Use conversion flag to explicitly call str or repr conversions
+"""
+f"{car!s}"
+f"{car!r}"
+
 
 """
 The default __repr__ implementation is useless
