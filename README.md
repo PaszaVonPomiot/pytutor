@@ -7,6 +7,9 @@ https://www.youtube.com/playlist?list=PLC0nd42SBTaNuP4iB4L6SJlMaHE71FG6N
 https://refactoring.guru/design-patterns/python
 https://www.tutorialspoint.com/python_design_patterns/index.htm
 
+## Full Stack Python Security
+
+
 ## Python tricks
 "Python Tricks: A Buffet of Awesome Python Features"
 
