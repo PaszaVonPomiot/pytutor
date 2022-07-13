@@ -1,4 +1,6 @@
 tutorial_env/
+.idea
+poetry.lock
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
