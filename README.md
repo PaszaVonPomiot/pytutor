@@ -19,3 +19,5 @@ https://github.com/amodiahs/SOLID_Design_Principles
 ## w3resource
 https://www.w3resource.com/python-exercises/python-basic-exercises.php
 
+## The well grounded python developer
+
