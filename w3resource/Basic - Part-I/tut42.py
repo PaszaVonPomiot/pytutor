@@ -1,2 +1,10 @@
 import struct
-print(struct.calcsize("P") * 8)
+
+# 5 string characters
+print(struct.calcsize("5s"))
+
+# 2 integer values
+print(struct.calcsize("2i"))
+
+# 10 boolean values
+print(struct.calcsize("10?"))
