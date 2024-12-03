@@ -1,6 +1,0 @@
-ruff
-EditorConfig
-mypy-type-checker
-even-better-toml
-
-material-icon-theme
