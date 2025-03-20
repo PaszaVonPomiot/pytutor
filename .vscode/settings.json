@@ -41,7 +41,6 @@
     },
     "mypy-type-checker.importStrategy": "fromEnvironment",
     "ruff.nativeServer": "on",
-    "ruff.showNotifications": "onError",
     "ruff.importStrategy": "fromEnvironment",
     "ruff.configurationPreference": "filesystemFirst",
     "explorer.compactFolders": true,
