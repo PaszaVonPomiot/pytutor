@@ -5,3 +5,7 @@ description = "Python notes"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = ["pydantic>=2.10.6"]
+
+
+[tool.ruff]
+ignore = ["F401"] # Ignore unused imports
