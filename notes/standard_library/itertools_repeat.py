@@ -1,14 +1,7 @@
-from itertools import pairwise, repeat
+from itertools import repeat
 from timeit import timeit
 
-# pairwise
-numbers = [1, 2, 3, 4, 5]
 
-for a, b in pairwise(numbers):
-    print(a, b)  # 1 2, 2 3, 3 4, 4 5
-
-
-# repeat
 def loop_using_repeat():
     for _ in repeat(None, 10_000_000):
         ...
