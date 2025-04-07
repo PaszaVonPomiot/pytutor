@@ -2,6 +2,7 @@
 
 ## ArjanCodes
 https://www.youtube.com/playlist?list=PLC0nd42SBTaNuP4iB4L6SJlMaHE71FG6N
+https://github.com/ArjanCodes/examples
 
 ## Design Patterns
 https://refactoring.guru/design-patterns/python
