@@ -1,24 +1,22 @@
-# My python learning adventures
+# Python Learning Resources
 
-## ArjanCodes
-https://www.youtube.com/playlist?list=PLC0nd42SBTaNuP4iB4L6SJlMaHE71FG6N
-https://github.com/ArjanCodes/examples
+1. Podcasts
 
-## Design Patterns
-https://refactoring.guru/design-patterns/python
-https://www.tutorialspoint.com/python_design_patterns/index.htm
+-   [ArjanCodes](https://www.youtube.com/playlist?list=PLC0nd42SBTaNuP4iB4L6SJlMaHE71FG6N)
+-   https://github.com/ArjanCodes/examples
 
-## Full Stack Python Security
+2. Books
 
+-   [Full Stack Python Security](https://www.manning.com/books/full-stack-python-security)
+-   [Python Tricks: A Buffet of Awesome Python Features](https://realpython.com/products/python-tricks-book/)
+-   [The well grounded python developer](https://www.manning.com/books/the-well-grounded-python-developer)
 
-## Python tricks
-"Python Tricks: A Buffet of Awesome Python Features"
+3. Misc
 
-## SOLID design principles
-https://github.com/amodiahs/SOLID_Design_Principles
+-   https://refactoring.guru/design-patterns/python
+-   https://www.tutorialspoint.com/python_design_patterns/index.htm
+-   https://github.com/amodiahs/SOLID_Design_Principles
 
-## w3resource
-https://www.w3resource.com/python-exercises/python-basic-exercises.php
+4. Exercises
 
-## The well grounded python developer
-
+-   https://www.w3resource.com/python-exercises/python-basic-exercises.php
