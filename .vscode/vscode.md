@@ -1,3 +1,8 @@
-- python extension automatically loads .env file
-- reload extension to reload variables
-- there is workspace settings for `python.envFile` path
+-   python extension automatically loads .env file
+-   reload extension to reload variables
+-   there is workspace settings for `python.envFile` path
+-   breakpoints
+    -   Line breakpoint - when code reaches specified line
+    -   Function breakpoint - when specified function is called
+    -   Conditional breakpoint - expression (when specified expression is true at specified line)
+    -   Conditional breakpoint - hit count (when specified line was hit specified number of times)
