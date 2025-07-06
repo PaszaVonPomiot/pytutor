@@ -1,14 +1,10 @@
 """
 A dictionary that tracks which keys have been accessed.
+Uses Type Parameter Syntax from Python 3.12.
 """
 
-from typing import TypeVar
 
-K = TypeVar("K")
-V = TypeVar("V")
-
-
-class TypedTrackingDict(dict[K, V]):
+class TypedTrackingDict[K, V](dict[K, V]):
     def __init__(self, *args, **kwargs) -> None:
         super().__init__(*args, **kwargs)
         self.used_keys: set[K] = set()
