@@ -1,6 +1,8 @@
 def ResultGenerator(cursor, batchsize=1000):
     while True:
-        results = cursor.fetchmany(batchsize)  # buforowanie - połączenie do bazy raz na jakiś czas
+        results = cursor.fetchmany(
+            batchsize
+        )  # buforowanie - połączenie do bazy raz na jakiś czas
         if not results:
             break
         for result in results:  # procesowanie
@@ -15,5 +17,3 @@ generator = ResultGenerator(cursor)
 for record in generator:
     doSomethingWith(record)
 db.close()
-
-

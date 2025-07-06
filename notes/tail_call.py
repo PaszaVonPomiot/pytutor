@@ -8,7 +8,7 @@ it does some optimizations.
 # Tail call
 
 
-def another_function(n: int) -> None:
+def another_function(n: int) -> int:
     return 2 * n
 
 

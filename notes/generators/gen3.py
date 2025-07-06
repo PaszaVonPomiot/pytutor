@@ -1,8 +1,13 @@
-
 # Iterator protocol
 
-iterable = [1,2,3,4,5]  # skończona, już wygenerowana iterowalna lista (również tuple, dict, file, str)
-                        # iterable posiada metodę __iter__()
+iterable = [
+    1,
+    2,
+    3,
+    4,
+    5,
+]  # skończona, już wygenerowana iterowalna lista (również tuple, dict, file, str)
+# iterable posiada metodę __iter__()
 
 # stwórz iterator
 [].__iter__()
@@ -10,8 +15,10 @@ iter([])
 
 
 # stworzenie iteratora dla obiektu iterowalnego; predefiniowany iterator listy
-iterator = iter(iterable)  # iterator - obiekt, który zwraca kolejno po jednym elemencie z obiektu iterowalnego; pamięta swoją pozycję
-                           # iterator posiada metodę __next__()
+iterator = iter(
+    iterable
+)  # iterator - obiekt, który zwraca kolejno po jednym elemencie z obiektu iterowalnego; pamięta swoją pozycję
+# iterator posiada metodę __next__()
 
 # iteruj
 iterator.__next__()
@@ -25,5 +32,5 @@ print(next(iterator))
 
 
 # niejawne użycie iteratora tylko na czas trwania pętli
-for liczba in [1,2,3,4,5]:
+for liczba in [1, 2, 3, 4, 5]:
     pass

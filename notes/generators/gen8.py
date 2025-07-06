@@ -1,8 +1,9 @@
 def check_prime(number):
-    for divisor in range(2, int(number ** 0.5) + 1):
+    for divisor in range(2, int(number**0.5) + 1):
         if number % divisor == 0:
             return False
     return True
+
 
 def primes(max):  # z parametrem
     number = 1
@@ -15,7 +16,7 @@ def primes(max):  # z parametrem
 g = primes(100000)
 
 # for przyjmuje obiekt iterowalny o nieoznaczonej liczbie elementów
-for liczba in g:  
+for liczba in g:
     print(next(g))
 
 

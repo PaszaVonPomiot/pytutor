@@ -4,11 +4,11 @@ version = "0.1.0"
 description = "Python notes"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = [
-    "ipykernel>=6.29.5",
-    "pydantic>=2.10.6",
-]
+dependencies = ["pydantic>=2.10.6"]
 
 
 [tool.ruff]
 ignore = ["F401"] # Ignore unused imports
+
+[dependency-groups]
+dev = ["ipykernel>=6.29.5", "mypy>=1.16.1"]

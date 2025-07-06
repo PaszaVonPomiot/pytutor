@@ -1,9 +1,10 @@
 # obiekt, który jednocześnie reaguje na next() i iter()
 
+
 class Natural:  # stwórzmy własny iterator
     def __init__(self):
         self.i = 0
-        
+
     def __iter__(self):  # potrafi zwrócić iterator
         return self
 
