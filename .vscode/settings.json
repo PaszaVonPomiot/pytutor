@@ -19,7 +19,7 @@
     "workbench.tree.indent": 12,
     "workbench.tree.renderIndentGuides": "always",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Dark+",
     "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
     "python.languageServer": "Pylance",
     "python.terminal.activateEnvironment": true,
