@@ -1,4 +1,6 @@
-# https://www.w3resource.com/python-exercises/python-basic-exercises.php
+"""
+https://www.w3resource.com/python-exercises/python-basic-exercises.php
+"""
 
 print(
     """

@@ -1,5 +1,8 @@
-# Do not edit list when iterating over it
-# it will not iterate over all elements in the list
+"""
+Do not edit list when iterating over it
+it will not iterate over all elements in the list
+"""
+
 my_list = ["A", "B", "C"]
 for i in my_list:
     if i == "B":

@@ -1,5 +1,7 @@
-# format_spec  ::=  [[fill]align][sign][#][0][width][grouping_option][.precision][type]
-# {value:fill align width , sign # 0 width . precision type}
+"""
+format_spec  ::=  [[fill]align][sign][#][0][width][grouping_option][.precision][type]
+{value:fill align width , sign # 0 width . precision type}
+"""
 
 from datetime import datetime
 

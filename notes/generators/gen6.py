@@ -1,4 +1,7 @@
-# generator - iterator i iterable stworzony z funkcji z yield
+"""
+generator - iterator i iterable stworzony z funkcji z yield
+"""
+
 def gen_fun():  # funkcja generatorowa
     i = 0
     while True:

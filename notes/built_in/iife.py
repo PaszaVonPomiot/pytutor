@@ -1,5 +1,6 @@
-# immedietly invoked function expression
-
+"""
+immedietly invoked function expression
+"""
 
 @lambda _: _()
 def f():

@@ -1,13 +1,16 @@
-a = a_base = 7
-b = b_base = 9
+def print_lcm(a_base, b_base):
+    current_a = a_base
+    current_b = b_base
 
-while True:
-    print(a, b, sep=" ")
-    if a == b:
-        print("NWW: %i" % a)
-        break
-    elif a > b:
-        b += b_base
-    elif a < b:
-        a += a_base
+    while True:
+        print(current_a, current_b, sep=" ")
+        if current_a == current_b:
+            print("NWW: %i" % current_a)
+            break
+        elif current_a > current_b:
+            current_b += b_base
+        elif current_a < current_b:
+            current_a += a_base
+
+print_lcm(7, 9)
     

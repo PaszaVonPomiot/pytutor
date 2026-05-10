@@ -1,4 +1,7 @@
-# any triplet that sums to zero
+"""
+any triplet that sums to zero
+"""
+
 from random import randint
 from itertools import permutations
 

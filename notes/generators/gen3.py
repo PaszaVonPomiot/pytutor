@@ -1,4 +1,6 @@
-# Iterator protocol
+"""
+Iterator protocol
+"""
 
 iterable = [
     1,

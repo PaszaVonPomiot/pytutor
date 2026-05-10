@@ -1,5 +1,6 @@
-# obiekt, który jednocześnie reaguje na next() i iter()
-
+"""
+obiekt, który jednocześnie reaguje na next() i iter()
+"""
 
 class Natural:  # stwórzmy własny iterator
     def __init__(self):

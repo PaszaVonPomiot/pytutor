@@ -1,4 +1,6 @@
-# https://www.w3resource.com/python-exercises/basic/
+"""
+https://www.w3resource.com/python-exercises/basic/
+"""
 
 numlist =[]
 while True:

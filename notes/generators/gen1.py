@@ -1,5 +1,6 @@
-# wygeneruj ciąg liczb naturalnych do nieskończoności po jednej
-
+"""
+wygeneruj ciąg liczb naturalnych do nieskończoności po jednej
+"""
 
 def fun():
     global a

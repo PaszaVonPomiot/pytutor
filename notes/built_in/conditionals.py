@@ -1,5 +1,6 @@
-# you can replace many conditional statements with a dictionary
-
+"""
+you can replace many conditional statements with a dictionary
+"""
 
 def a():
     print("a")

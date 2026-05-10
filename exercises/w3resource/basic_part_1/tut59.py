@@ -5,10 +5,9 @@ def feet_to_cm(feet):
     return feet * 30.48
 
 feet = float(input("feet: "))
-cm = feet_to_cm(feet)
-print(cm, "cm")
+feet_cm = feet_to_cm(feet)
+print(feet_cm, "cm")
 
 inches = float(input("inches: "))
-cm = inches_to_cm(inches)
-print(cm, "cm")
-
+inches_cm = inches_to_cm(inches)
+print(inches_cm, "cm")
