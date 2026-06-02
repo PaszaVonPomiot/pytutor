@@ -8,4 +8,6 @@
 -   https://www.youtube.com/watch?v=g-Cytq7YDCc
 -   https://www.youtube.com/watch?v=ho24rK_AYrQ
 -   http://blog.glyph.im/2025/04/stop-writing-init-methods.html
-- prebound methods
+-   prebound methods
+-   https://www.youtube.com/watch?v=g7EGMWvJ1fI
+-   https://www.youtube.com/watch?v=wYeDGkdMi3g

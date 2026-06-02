@@ -1,5 +1,5 @@
-"""Very concise examples of Python built-in types."""
-
+from dataclasses import dataclass
+from typing import ClassVar
 
 examples = {
     "bool": (True, "immutable, truth values"),
@@ -22,3 +22,9 @@ examples = {
 
 for name, (value, info) in examples.items():
     print(f"{name:10} {value!r:20} {info}")
+
+
+@dataclass
+class MyClass:
+    instance_variable_int: int
+    class_variable_int: ClassVar[int]
