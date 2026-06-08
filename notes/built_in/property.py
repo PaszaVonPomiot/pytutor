@@ -1,26 +1,15 @@
 """
-Property
+A Python property is a descriptor that lets you access methods like simple attributes.
+It allows you to add logic (validation, computation) when getting, setting, or deleting values.
 
-Calling `property(`) is a succinct way of building a data descriptor that triggers a function call upon access to an attribute.
+Created with @property decorator or property() function.
+Uses the descriptor protocol under the hood.
+
+Using a property communicates that something is state-like, cheap to access, safe to read often.
 """
 
-# without decorator
-class ManualPropertyExample:
-    def __init__(self):
-        self._x = None
 
-    def getx(self):
-        return self._x
-
-    def setx(self, value):
-        self._x = value
-
-    def delx(self):
-        del self._x
-
-    x = property(getx, setx, delx, "I'm the 'x' property.")
-
-# with decorator
+# Managed attribute with decorator
 class DecoratedPropertyExample:
     def __init__(self):
         self._x = None
@@ -38,53 +27,23 @@ class DecoratedPropertyExample:
     def x(self):
         del self._x
 
-# ---
-#
-# Pure python implementation of property:
 
-class Property:
-    "Emulate PyProperty_Type() in Objects/descrobject.c"
+dpe = DecoratedPropertyExample()
+dpe.x
 
-    def __init__(self, fget=None, fset=None, fdel=None, doc=None):
-        self.fget = fget
-        self.fset = fset
-        self.fdel = fdel
-        if doc is None and fget is not None:
-            doc = fget.__doc__
-        self.__doc__ = doc
-        self._name = ''
 
-    def __set_name__(self, owner, name):
-        self._name = name
+# Managed attribute without decorator
+class ManualPropertyExample:
+    def __init__(self):
+        self._x = None
 
-    def __get__(self, obj, objtype=None):
-        if obj is None:
-            return self
-        if self.fget is None:
-            raise AttributeError(f'unreadable attribute {self._name}')
-        return self.fget(obj)
+    def getx(self):
+        return self._x
 
-    def __set__(self, obj, value):
-        if self.fset is None:
-            raise AttributeError(f"can't set attribute {self._name}")
-        self.fset(obj, value)
+    def setx(self, value):
+        self._x = value
 
-    def __delete__(self, obj):
-        if self.fdel is None:
-            raise AttributeError(f"can't delete attribute {self._name}")
-        self.fdel(obj)
+    def delx(self):
+        del self._x
 
-    def getter(self, fget):
-        prop = type(self)(fget, self.fset, self.fdel, self.__doc__)
-        prop._name = self._name
-        return prop
-
-    def setter(self, fset):
-        prop = type(self)(self.fget, fset, self.fdel, self.__doc__)
-        prop._name = self._name
-        return prop
-
-    def deleter(self, fdel):
-        prop = type(self)(self.fget, self.fset, fdel, self.__doc__)
-        prop._name = self._name
-        return prop
+    x = property(getx, setx, delx, "I'm the 'x' property.")
