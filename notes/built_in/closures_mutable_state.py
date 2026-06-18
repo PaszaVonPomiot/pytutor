@@ -1,7 +1,7 @@
 from typing import Callable
 
 
-# Use case: Closure with mutable state
+# Use case: Function factory with mutable state
 def counter() -> Callable[[], int]:
     count = 0
 

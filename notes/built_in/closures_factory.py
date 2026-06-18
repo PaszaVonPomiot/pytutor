@@ -1,7 +1,7 @@
 from typing import Callable
 
 
-# Use case: Closure with parameters as factory function
+# Use case: Function factory with closure
 def tax_calculator(tax_rate: float) -> Callable[[float], float]:
 
     def get_tax_amount(money: float) -> float:

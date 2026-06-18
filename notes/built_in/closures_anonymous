@@ -1,0 +1,14 @@
+from typing import Callable
+
+
+# Use case: Function factory with anonymous inner function (lambda)
+def greet(name: str) -> Callable[[], str]:
+
+    return lambda: "Hi " + name + "!"
+
+
+john_greet = greet("John")
+jane_greet = greet("Jane")
+
+print(john_greet())  # Output: Hi John!
+print(jane_greet())  # Output: Hi Jane!
