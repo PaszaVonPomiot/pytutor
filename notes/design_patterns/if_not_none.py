@@ -32,7 +32,8 @@ def add_waypoint(drone: Drone0, waypoint: str) -> None:
 
 
 # Solution 1 - Use meaningful default values
-# Use None only when “no value” has a distinct meaning
+# Use None only when "no value" has a distinct meaning
+# Otherwise see if True/False, empty list, or 0 is a better default value
 @dataclass
 class Drone1:
     id: str
