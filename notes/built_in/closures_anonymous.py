@@ -1,4 +1,4 @@
-from typing import Callable
+from collections.abc import Callable
 
 
 # Use case: Function factory with anonymous inner function (lambda)
